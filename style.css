@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(28, 27, 27);
+}
+input {
+    font-size:25px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: blue;
+    font-family: monospace;
+}
+
+.setting {
+    margin-top: 200px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-weight: 100;
+}
+
+button {
+    margin-top: 40px;
+    font-size: 50px;
+    background-color: rgb(36, 250, 36);
+    padding: 20px;
+    border-radius: 20px;
+    font-family: monospace;
+}
+
+label {
+    font-size: 20px;
+}
+
+#countdown {
+    font-size: 100px;
+    color: aliceblue;
+    font-family: monospace;
+    text-align: center;
+    margin-top: 100px;
+
+}
