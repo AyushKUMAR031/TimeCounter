@@ -25,6 +25,8 @@ let targetTime;
         if (remainingTime < 0) {
           clearInterval(intervalId);
           document.getElementById("countdown").innerHTML = "Countdown expired";
+            let audio = new Audio("alertAudio.mp3");
+              audio.play();
         } else {
           // Calculate hours, minutes, and seconds
           const hours = Math.floor(remainingTime / (1000 * 60 * 60));
