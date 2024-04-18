@@ -2,7 +2,7 @@ body {
     background-color: rgb(28, 27, 27);
 }
 input {
-    font-size:25px;
+    font-size:4vh;
     text-align: center;
     border-radius: 10px;
     border-color: blue;
@@ -10,7 +10,7 @@ input {
 }
 
 .setting {
-    margin-top: 200px;
+    margin-top: 20vh;
     text-align: center;
     color:rgb(255, 255, 255);
     font-weight: 100;
@@ -30,10 +30,10 @@ label {
 }
 
 #countdown {
-    font-size: 100px;
+    font-size: 12vh;
     color: aliceblue;
     font-family: monospace;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 5vh;
 
 }
