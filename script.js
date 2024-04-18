@@ -1,5 +1,6 @@
 let targetTime;
 let intervalId;
+let audio = new Audio("alertAudio.mp3");
 
 function startTimer() {
   const hours = parseInt(document.getElementById("hours").value) || 0;
@@ -19,11 +20,13 @@ function startTimer() {
 
 function stopTimer() {
   clearInterval(intervalId);
+  audio.pause();
 }
 
 function resetTimer() {
   clearInterval(intervalId);
   document.getElementById("countdown").innerHTML = "00h 00m 00s";
+  audio.pause();
 }
 
 function updateCountdown() {
@@ -34,7 +37,6 @@ function updateCountdown() {
   if (remainingTime < 0) {
     clearInterval(intervalId);
     document.getElementById("countdown").innerHTML = "Countdown expired";
-    let audio = new Audio("alertAudio.mp3");
     audio.play();
 
   } else {
